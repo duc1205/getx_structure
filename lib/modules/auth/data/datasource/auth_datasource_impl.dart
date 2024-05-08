@@ -1,12 +1,12 @@
 import 'package:dio/dio.dart';
 import 'package:fpdart/fpdart.dart';
-import 'package:injectable/injectable.dart';
+import 'package:getx_structure/core/base/base_remote_source.dart';
+import 'package:getx_structure/modules/auth/data/datasource/auth_datasource.dart';
 
 import '../../../../core/core.dart';
-import 'auth_datasource.dart';
 
-@LazySingleton(as: AuthDataSource)
-class AuthDataSourceImpl extends AuthDataSource {
+class AuthDataSourceImpl extends BaseRemoteDataSource
+    implements AuthDataSource {
   final Dio _dio;
 
   AuthDataSourceImpl({required Dio dio}) : _dio = dio;
