@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:injectable/injectable.dart';
-import 'package:talker_dio_logger/talker_dio_logger.dart';
 
 import '/network/request_headers.dart';
+import '/network/pretty_dio_logger.dart';
 
 @lazySingleton
 class DioProvider {
@@ -48,10 +48,12 @@ class DioProvider {
     _instance!.interceptors.add(RequestHeaderInterceptor());
     if (kDebugMode) {
       _instance!.interceptors.add(
-        TalkerDioLogger(
-          settings: const TalkerDioLoggerSettings(
-            printRequestHeaders: true,
-          ),
+        PrettyDioLogger(
+          requestHeader: true,
+          requestBody: true,
+          responseBody: true,
+          responseHeader: true,
+          compact: false,
         ),
       );
     }

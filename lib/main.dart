@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:talker_flutter/talker_flutter.dart';
+import 'package:getx_structure/injector.dart';
 
 import 'routers/app_pages.dart';
 
-void main() {
-  TalkerFlutter.init();
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await configureDependencies();
   runApp(const MyApp());
 }
 

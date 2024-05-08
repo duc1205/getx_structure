@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:fpdart/fpdart.dart';
 
-import 'error_codes.dart';
+import '../core.dart';
 
 class DataError implements Exception {
   DataError({
