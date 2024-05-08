@@ -4,6 +4,4 @@ export 'constants/storage_key_constants.dart';
 export 'exceptions/data_error.dart';
 export 'exceptions/error_codes.dart';
 export 'extensions/datetime_extension.dart';
-export 'storage_manager/local_storage/preference_manager.dart';
-export 'storage_manager/local_storage/preference_manager_impl.dart';
 export 'theme/app_colors.dart';

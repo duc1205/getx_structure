@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_structure/injector.dart';
 
+import 'bindings/initial_binding.dart';
 import 'routers/app_pages.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await configureDependencies();
+
   runApp(const MyApp());
 }
 
@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       getPages: AppPages.pages,
+      initialBinding: InitialBinding(),
     );
   }
 }

@@ -1,1 +1,0 @@
- /Users/ducnguyen/Desktop/Data1/getx_structure/.dart_tool/flutter_build/1783bcbfead7a45c150560b59d622227/native_assets.yaml: 
