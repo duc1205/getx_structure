@@ -1,9 +1,4 @@
- What I DID:
- 
- Init structure FE:
 
-
-Ref: https://github.com/clipcrow/saludi-lifestyle-related-diseases/issues/3
  
  ```
  
